@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "StudentTaskMangerBlazorApp\\StudentTaskMangerBlazorApp.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "StudentTaskManager.API\\StudentTaskManager.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

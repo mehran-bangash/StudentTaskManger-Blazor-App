@@ -1,0 +1,17 @@
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\BLL.deps.json
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\BLL.dll
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\BLL.pdb
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\DAL.dll
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\Entities.dll
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\DAL.pdb
+D:\Blazor App Projects\StudentTaskManger\BLL\bin\Debug\net8.0\Entities.pdb
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.dll
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\refint\BLL.dll
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\BLL.pdb
+D:\Blazor App Projects\StudentTaskManger\BLL\obj\Debug\net8.0\ref\BLL.dll

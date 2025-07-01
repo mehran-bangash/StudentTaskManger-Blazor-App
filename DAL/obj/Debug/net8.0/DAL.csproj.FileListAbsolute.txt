@@ -1,0 +1,15 @@
+D:\Blazor App Projects\StudentTaskManger\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\Blazor App Projects\StudentTaskManger\DAL\bin\Debug\net8.0\DAL.dll
+D:\Blazor App Projects\StudentTaskManger\DAL\bin\Debug\net8.0\DAL.pdb
+D:\Blazor App Projects\StudentTaskManger\DAL\bin\Debug\net8.0\Entities.dll
+D:\Blazor App Projects\StudentTaskManger\DAL\bin\Debug\net8.0\Entities.pdb
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.csproj.Up2Date
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.dll
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\DAL.pdb
+D:\Blazor App Projects\StudentTaskManger\DAL\obj\Debug\net8.0\ref\DAL.dll

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Blazor App Projects\\StudentTaskManger\\StudentTaskMangerBlazorApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\StudentTaskMangerBlazorApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\StudentTaskMangerBlazorApp.toldgokezg.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Blazor App Projects\\StudentTaskManger\\StudentTaskMangerBlazorApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\Blazor App Projects\\StudentTaskManger\\StudentTaskMangerBlazorApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Blazor App Projects\\StudentTaskManger\\StudentTaskMangerBlazorApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Blazor App Projects\\StudentTaskManger\\StudentTaskMangerBlazorApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StudentTaskMangerBlazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.StudentTaskMangerBlazorApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.StudentTaskMangerBlazorApp.props",
+      "PackagePath": "build\\StudentTaskMangerBlazorApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.StudentTaskMangerBlazorApp.props",
+      "PackagePath": "buildMultiTargeting\\StudentTaskMangerBlazorApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.StudentTaskMangerBlazorApp.props",
+      "PackagePath": "buildTransitive\\StudentTaskMangerBlazorApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

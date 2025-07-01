@@ -1,0 +1,138 @@
+﻿@page "/tasks"
+@using Entities.Models
+@using BLL.Interfaces
+@using TaskModel = Entities.Models.Task
+@inject ITaskBLL TaskService
+@inject ICourseBLL CourseService
+@inject IUserBLL UserService
+@rendermode InteractiveServer
+
+<h3>Task Manager</h3>
+
+<!-- Add/Edit Form -->
+<div class="mb-4">
+    <input class="form-control mb-2" placeholder="Title" @bind="taskForm.Title" />
+    <textarea class="form-control mb-2" placeholder="Description" @bind="taskForm.Description"></textarea>
+    <input class="form-control mb-2" type="date" @bind="taskForm.DueDate" />
+    <select class="form-select mb-2" @bind="taskForm.CourseId">
+        <option disabled selected>Select Course</option>
+        @foreach (var course in courses)
+        {
+            <option value="@course.CourseId">@course.CourseName</option>
+        }
+    </select>
+    <select class="form-select mb-2" @bind="taskForm.UserId">
+        <option disabled selected>Select User</option>
+        @foreach (var user in users)
+        {
+            <option value="@user.UserId">@user.FullName</option>
+        }
+    </select>
+    <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" @bind="taskForm.IsCompleted" />
+        <label class="form-check-label">Completed?</label>
+    </div>
+
+    @if (isEditing)
+    {
+        <button class="btn btn-success me-2" @onclick="UpdateTask">Update</button>
+        <button class="btn btn-secondary" @onclick="CancelEdit">Cancel</button>
+    }
+    else
+    {
+        <button class="btn btn-primary" @onclick="AddTask">Add Task</button>
+    }
+</div>
+
+<!-- Task Table -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Due</th>
+            <th>Completed</th>
+            <th>Course</th>
+            <th>User</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var t in tasks)
+        {
+            <tr>
+                <td>@t.Title</td>
+                <td>@t.DueDate?.ToShortDateString()</td>
+                <td>@(t.IsCompleted ? "✔️" : "❌")</td>
+                <td>@courses.FirstOrDefault(c => c.CourseId == t.CourseId)?.CourseName</td>
+                <td>@users.FirstOrDefault(u => u.UserId == t.UserId)?.FullName</td>
+                <td>
+                    <button class="btn btn-sm btn-warning me-2" @onclick="() => EditTask(t)">Edit</button>
+                    <button class="btn btn-sm btn-danger" @onclick="() => DeleteTask(t.TaskId)">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<TaskModel> tasks = new();
+    private TaskModel taskForm = new();
+    private bool isEditing = false;
+
+    private List<Course> courses = new();
+    private List<User> users = new();
+
+    protected override void OnInitialized()
+    {
+        LoadData();
+    }
+
+    private void LoadData()
+    {
+        tasks = TaskService.GetAllTasks();
+        courses = CourseService.GetAllCourses();
+        users = UserService.GetAllUsers();
+    }
+
+    private void AddTask()
+    {
+        TaskService.AddTask(taskForm);
+        taskForm = new TaskModel();
+        LoadData();
+    }
+
+    private void EditTask(TaskModel t)
+    {
+        taskForm = new TaskModel
+            {
+                TaskId = t.TaskId,
+                Title = t.Title,
+                Description = t.Description,
+                DueDate = t.DueDate,
+                IsCompleted = t.IsCompleted,
+                CourseId = t.CourseId,
+                UserId = t.UserId
+            };
+        isEditing = true;
+    }
+
+    private void UpdateTask()
+    {
+        TaskService.UpdateTask(taskForm);
+        taskForm = new TaskModel();
+        isEditing = false;
+        LoadData();
+    }
+
+    private void DeleteTask(int id)
+    {
+        TaskService.DeleteTask(id);
+        LoadData();
+    }
+
+    private void CancelEdit()
+    {
+        taskForm = new TaskModel();
+        isEditing = false;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CbbO+SyxiOoq0RJl2AossE9oW0ev1+nwfa3C2odZtZQ=",
+  "Source": "StudentTaskManager.API",
+  "BasePath": "_content/StudentTaskManager.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
